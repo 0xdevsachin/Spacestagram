@@ -1,0 +1,26 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+.loading{
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: loader 1s infinite ease-in-out;
+}
+
+@keyframes loader{
+    0%, 100%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}

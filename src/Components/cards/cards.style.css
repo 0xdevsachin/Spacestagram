@@ -1,0 +1,48 @@
+.cards{
+    width: 550px;
+    min-height: 550px;
+    margin: 50px 30px;
+    overflow: hidden;
+    background-color: #141422;
+    box-shadow: 0px 0px 30px #252542;
+}
+.img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.text{
+    color: white;
+    margin-bottom: 12px;
+    padding: 20px;
+}
+
+.content{
+    min-height: 20vh;
+    width: 95%;
+    overflow-y: auto;
+}
+@media screen and (max-width:550px) {
+    .cards{
+        height: 550px !important;
+        margin: 5px;
+        text-align: center;
+    }
+    .img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .content{
+        display: none;
+    }
+}
+.button{
+    width: 110px;
+    height: 40px;
+    margin: 22px;
+    background: #007bff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+}
