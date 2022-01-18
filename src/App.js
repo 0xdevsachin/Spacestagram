@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import "./App.css";
 import Card from "./Components/Card/card.component";
 import Header from "./Components/header/header.component";
 import axios from "axios";
 import Loading from "./Components/Loading/loading";
+import { Routes, Route } from "react-router-dom";
+import Like from "./Components/Link/Like";
 function App() {
   const [data, setData] = useState(null);
+  
   useEffect(() => {
     const fetchdata = async () => {
       const Date_Range = "2021-10-01";
@@ -25,9 +28,22 @@ function App() {
   return (
     <>
       <Header />
-      {data ? <Card data={data} /> : <Loading />}
+      <Routes>
+          <Route path="/" element={data ? <Card data={data} /> : <Loading />} />
+          <Route path="like" element={<Like />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
 
 export default App;
+
+
+const Footer = () =>{
+  return (
+    <div className="header">
+      <a href="https://github.com/0xdevsachin/spacestagram" target='_blank' rel="noreferrer"><h1><i className="fab fa-github"></i></h1></a>
+    </div>
+  )
+}
