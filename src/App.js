@@ -5,7 +5,7 @@ import Header from "./Components/header/header.component";
 import axios from "axios";
 import Loading from "./Components/Loading/loading";
 import { Routes, Route } from "react-router-dom";
-import Like from "./Components/Link/Like";
+import Like from "./Components/Like/Like";
 function App() {
   const [data, setData] = useState(null);
   
