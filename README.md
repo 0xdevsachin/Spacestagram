@@ -1,8 +1,8 @@
 # Spacestagram
 
 Spacestagram built using ReactJS. It fetch the Images and it's metadata From NASA Api
-User can Share Images
-User can like Post and See their Liked images on Like Page
+ * User can Share Images
+ * User can like Post and See their Liked images on Like Page
 
 # Screenshots
 
